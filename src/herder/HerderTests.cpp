@@ -410,6 +410,7 @@ TEST_CASE("surge", "[herder]")
             REQUIRE(tx->getSourceID() == accountB.getPublicKey());
         }
     }
+    
     SECTION("one account paying more except for one tx")
     {
         // extra transaction would push the account below the reserve
